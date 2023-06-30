@@ -33,7 +33,7 @@ class Bird(pygame.sprite.Sprite):
     self.image = pygame.transform.rotate(self.image, self.angle)
     self.rect = self.image.get_rect(center = (self.rect.centerx, self.rect.centery))
     screen.blit(self.image, self.rect)
-    print(self.angle)
+
     if self.g > 0:
       self.index = 0
       if self.angle > -85: self.angle-=4
